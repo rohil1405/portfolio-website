@@ -314,11 +314,12 @@ nav {
   display: flex;
   align-items: center;
   min-height: 80vh;
+  gap: 40px;
 }
 
 .about-img img {
-  height: 12rem;
-  width: auto;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin: 2rem;
   box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
@@ -333,6 +334,10 @@ nav {
 .about-text-box h2 {
   font-size: 4rem;
   margin-bottom: 20px;
+}
+
+.footer-coded-by p {
+  padding-top: 15px;
 }
 
 .about-text-box p {
@@ -393,11 +398,24 @@ hr {
   cursor: default;
 }
 
+.tier-item:hover {
+  padding: 30px;
+  border: 0.2px solid #fff;
+  border-radius: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .tier-item i {
   font-size: 3.5rem;
+  text-align: center;
 }
 
 .tier-item h2 {
+  text-align: center;
   font-size: 2rem;
   margin: 2rem 0;
   background: linear-gradient(
@@ -410,6 +428,7 @@ hr {
 }
 
 .tier-item p {
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
 }
@@ -444,6 +463,7 @@ hr {
 
 .project-description h2 {
   font-size: 2rem;
+  text-align: center;
   margin: 2rem 0;
   background: linear-gradient(
     to right,
@@ -457,6 +477,7 @@ hr {
 .project-description p {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 .project-link {
@@ -465,11 +486,11 @@ hr {
   font-size: 1.4rem;
 }
 
+
 /* Contact */
 
 .contact {
   width: 100%;
-  min-height: 100vh;
   max-width: 70rem;
   margin: auto;
   padding-top: 5rem;
@@ -489,7 +510,7 @@ hr {
 }
 
 .contact .container {
-  min-height: 50vh;
+ padding-top: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -596,5 +617,9 @@ footer a {
   footer,
   footer p {
     font-size: 1.2rem;
+  }
+
+  .nav-list.active {
+    width: 100%;
   }
 }
